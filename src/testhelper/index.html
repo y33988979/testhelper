@@ -1,0 +1,25 @@
+<!--pass.html-->
+<html> 
+<head><title>user login verify</title></head> 
+<body>
+<!--下面的action是表单提交后在服务器端执行的gic程序（即c的可执行程序）-->
+<!--cgi可执行程序放在 /www/cgi-bin/目录下-->
+<form name="login_form1" action="/script/login.cgi" method="POST"> 
+<table align="center"> 
+    <tr><td align="center" colspan="2"></td></tr>
+    <tr>
+       <td align="right">User</td>
+       <td><input type="text" name="Username"></td>
+    </tr>
+    <tr>
+       <td align="right">Passwd</td>
+       <td><input type="password" name="Password"></td>
+    </tr>
+    <tr>
+       <td><input type="submit" value="LogIn"></td>
+       <td><input type="reset" value="Cancel"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

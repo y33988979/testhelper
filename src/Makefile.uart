@@ -1,0 +1,9 @@
+target:
+	arm-hisiv200-linux-gcc hlp_uartRecv.c hlp_print.c drv_uart.c -o hlp_uartSend -lpthread
+	arm-hisiv200-linux-gcc hlp_uartRecv.c hlp_print.c drv_uart.c -o hlp_uartRecv -lpthread
+	arm-hisiv200-linux-gcc hlp_serial.c hlp_gpio.c -o hlp_switch -lpthread
+	cp hlp_uartSend hlp_uartRecv /home/work
+
+app: target
+	./mkyaffs2image504 app helper.yaffs2 2k 1bit
+

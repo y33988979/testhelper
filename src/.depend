@@ -1,0 +1,5 @@
+hlp_file.o: hlp_file.c hlp_file.h hlp_config.h hlp_core.h
+hlp_net.o: hlp_net.c
+hlp_ring.o: hlp_ring.c
+hlp_uart_send.o: hlp_uart_send.c command.h
+hlp_uart_recv.o: hlp_uart_recv.c command.h

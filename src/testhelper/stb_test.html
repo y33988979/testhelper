@@ -1,0 +1,24 @@
+<!--stb_test.html-->
+<html> 
+<head><title>user login verify</title></head> 
+<body>
+<!--下面的action是表单提交后在服务器端执行的gic程序（即c的可执行程序）-->
+<!--cgi可执行程序放在 /www/script/目录下-->
+<form name="login_form1" action="/script/snd_cmd.cgi" method="POST"> 
+<br><br><br><br><br>
+
+<table align="center"> 
+    <tr><td align="center" colspan="2"></td></tr>
+    <tr>
+       <td align="right">"Test time"</td>
+       <td><input type="text" name="test_time"></td>
+
+       <td align="right">"Save log"</td>
+       <td><input type="text" name="save_log"></td>
+       
+       <td><input type="submit" value="submit"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
